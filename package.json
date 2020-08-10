@@ -1,0 +1,72 @@
+{
+  "name": "@ignitor/thux",
+  "version": "1.0.0",
+  "description": "The mixed module for combining React-Redux and ReduxThunk.",
+  "keywords": [
+    "ignitor",
+    "vessel",
+    "thux",
+    "redux",
+    "redux-thunk",
+    "front-end"
+  ],
+  "homepage": "",
+  "license": "ISC",
+  "author": "mornya <mornya78@gmail.com>",
+  "private": false,
+  "repository": "https://github.com/mornya/thux",
+  "bugs": "https://github.com/mornya/thux/issues",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "vessel prepublish",
+    "login": "vessel login",
+    "clean": "vessel clean",
+    "build": "vessel build",
+    "watch": "vessel build watch",
+    "lint": "lintest lint",
+    "lint:fix": "lintest lint fix",
+    "test": "lintest test",
+    "test:watch": "lintest test watch",
+    "test:coverage": "lintest test coverage"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "!dist/test",
+    "!dist/**/@setup.d.ts",
+    "!dist/**/@setup.js",
+    "!dist/**/*.test.d.ts",
+    "!dist/**/*.test.js",
+    "types",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "dependencies": {
+    "immer": "^7.0.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.9",
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.45",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "@types/webpack-env": "^1.15.2"
+  },
+  "vessel": {
+    "minVersion": "4.0.0"
+  }
+}
